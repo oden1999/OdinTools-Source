@@ -1,101 +1,78 @@
-# ⚡ Odin Tools - by ♡B̷y̷D̷r̷a̷X̷x̷♡
+# ⚡ Odin Tools ⚡
 
-![Odin Tools Banner](./Banner_Project_Odin.png)  
-
-## Table of Contents
-
-- [Description](#description)
-- [Features](#features)
-- [System Requirements](#system-requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Resources and Support](#resources-and-support)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
----
-
-## Description
-
-**Odin Tools** is an innovative application designed to deliver **solutions and enhancements to your games quickly and effortlessly**.  
-With an intuitive interface and outstanding performance, Odin Tools fixes bugs, optimizes settings, and manages resources for your favorite titles.  
-**Discover a new way to enjoy your games!**
-
----
+**Odin Tools** is a modern game launcher that provides Bypass and OnlineFix tools for various games across multiple platforms including Ubisoft, EA, Rockstar, Denuvo, and PlayStation.
 
 ## Features
 
-- **Quick and Easy Installation:** A sleek, optimized installer to set up the application effortlessly on any PC.
-- **Automatic Updates:** Stay up-to-date with background notifications and downloads.
-- **Full Compatibility:** Optimized for Windows 10, Windows 11, and systems with .NET Framework 4.8.
+| Feature | Description |
+|---------|-------------|
+| **Bypass Games** | 139+ games with bypass functionality |
+| **OnlineFix Games** | 186+ games with online fix support |
+| **SteamLess** | Remove Steam DRM from games |
+| **Modern UI** | Dark cyan/blue theme with glassmorphism effects |
+| **Auto-Updates** | Automatic update checking from GitHub |
+| **Multi-Platform** | Support for multiple game platforms |
 
----
+## Requirements
 
-## System Requirements
+- Windows 7/8/10/11
+- .NET Framework 4.8
+- Visual Studio 2022 (for development)
 
-- **Operating System:** Windows 10, Windows 11 (Windows 7/8 may work if .NET Framework 4.8 is installed).
-- **.NET Framework 4.8:** *If not installed, the installer will offer to download and install it automatically.*
-- **Disk Space:** At least 200 MB of free space for installation and updates.
-- **Internet Connection:** Required for updates and fixes downloads.
+## How It Works
 
----
+1. **Data Sources:** Game data is loaded from `data.json` and `data-fix.json` hosted on GitHub
+2. **Game Downloads:** Fix files are downloaded from the private `OdinTools-GamesFixes` repository
+3. **Auto-Update:** The app checks `latest-version.txt` on GitHub for new versions
+4. **Local Database:** SQLite stores user progress and library data locally
 
-## Installation
+## For Developers
 
-### Option 1: Automatic Installation (Recommended)
+### Build Instructions
 
-1. **Download the installer** from the [official Odin Tools page](https://github.com/oden1999/OdinTools/releases).
-2. Run the `OdinToolsInstaller.exe` file.
-3. Follow the setup wizard instructions to complete the installation.
-4. A desktop shortcut will be created for quick access.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/oden1999/OdinTools-Source.git
+   ```
 
-### Option 2: Manual Installation
+2. Open `OdinTools.sln` in Visual Studio 2022
 
-- Download the installer from the [Odin Tools releases page](https://github.com/oden1999/OdinTools/releases).
-- Ensure you have installed [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631).
-- Run the installer and follow the on-screen instructions.
+3. Restore NuGet packages (includes HandyControl, Newtonsoft.Json, etc.)
 
----
+4. Build and run
 
-## Usage
+### Project Structure
 
-1. Launch **Odin Tools** via the desktop shortcut or from the Start Menu.
-2. The main interface will load, displaying available fixes and update options.
-3. Select the game you want to modify or update.
-4. Follow the on-screen instructions to apply the fixes.
-5. After completion, a confirmation message will appear letting you know your game is ready to play.
+```
+OdinTools/
+├── App.xaml / App.xaml.cs       # Application entry point
+├── MainWindow.xaml/.cs          # Main window
+├── Classes/                     # Helper classes
+├── Pages/                       # App pages
+├── UserControls/                # Reusable controls
+├── Windows/                     # Dialog windows
+├── res/                         # Resources (fonts, icons, media)
+├── data.json                    # Bypass game data
+├── data-fix.json                # OnlineFix game data
+└── packages.config              # NuGet packages
+```
 
-> **Note:** If you encounter any issues, please refer to the [Resources and Support](#resources-and-support) section.
+### Adding New Games
 
----
+1. Add game entry to `data.json` (Bypass) or `data-fix.json` (OnlineFix)
+2. Upload the fix ZIP file to `OdinTools-GamesFixes` repository
+3. The app will automatically detect and download the new game
 
-## Resources and Support
+## Data Files
 
-- **Help Channel:** Join our [Discord/Slack/Telegram](https://discord.gg/JBB2pTNTqK) for real-time support.
-- **Report Issues:** If you find a bug or want to suggest improvements, please open an [issue](https://github.com/oden1999/OdinTools/issues) on GitHub.
-
----
+- **data.json** - Contains Bypass game data (downloaded from GitHub)
+- **data-fix.json** - Contains OnlineFix game data (downloaded from GitHub)
+- **latest-version.txt** - Current version number for auto-update
 
 ## License
 
-> **Copyright © 2025 oden1999**  
-> **All rights reserved.**  
-> 
-> This source code and all associated files are the exclusive property of the author. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, including copying, modifying, reusing, or publishing any part of the code or associated assets, without the prior written permission of the author.
-> 
-> Unauthorized use, distribution, or modification of this software or any of its components is **strictly prohibited** and may result in **legal action**.
-> 
-> This project is **not open-source** and does not grant any license for reuse or redistribution under any circumstances.
-
+Original project by LightnigFast. Modified version by Odin Tools Team.
 
 ---
 
-## Acknowledgments
-
-- Thanks to [Flaticon](https://www.flaticon.com) and [Icons8](https://icons8.com) for providing amazing graphic resources.
-- Thanks to the **GitHub** and **Stack Overflow** communities for the continuous support during development.
-- And of course, thanks to **you** for using Odin Tools!
-
----
-
-*Download, install, and supercharge your gaming experience with Odin Tools!* 🚀⚡
+> Built with WPF, C#, and love ❤️
