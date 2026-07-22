@@ -1,7 +1,8 @@
-*.exe
-*.dll
 bin/
 obj/
 *.user
 *.suo
 odin_token.txt
+
+# Allow DLLs in res/dlls (Steam API)
+!res/dlls/
