@@ -1,0 +1,7 @@
+res/dlls/
+*.exe
+*.dll
+bin/
+obj/
+*.user
+*.suo
