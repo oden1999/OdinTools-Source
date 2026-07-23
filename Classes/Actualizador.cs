@@ -10,8 +10,8 @@ namespace OdinTools.Classes
 {
     public class Actualizador
     {
-        private static readonly string urlVersion = "https://raw.githubusercontent.com/oden1999/OdinTools/main/latest-version.txt";
-        private static readonly string urlInstalador = "https://github.com/oden1999/OdinTools/releases/latest/download/OdinToolsInstaller.exe";
+        private static readonly string urlVersion = "https://raw.githubusercontent.com/oden1999/OdinTools-Source/main/latest-version.txt";
+        private static readonly string urlInstalador = "https://github.com/oden1999/OdinTools-Source/releases/latest/download/OdinToolsInstaller.exe";
         private static readonly string nombreInstalador = "OdinToolsInstaller.exe";
 
         public static async Task ComprobarActualizacion()
