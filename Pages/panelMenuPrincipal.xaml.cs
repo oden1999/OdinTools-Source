@@ -272,7 +272,7 @@ namespace OdinTools.Pages
         private async Task<List<string>> ObtenerUrlsPromosDesdeGitHub()
         {
             var urls = new List<string>();
-            string apiUrl = "https://api.github.com/repos/oden1999/OdinTools/contents/res/media/promos";
+            string apiUrl = "https://api.github.com/repos/oden1999/OdinTools-Source/contents/res/media/promos";
 
             using (HttpClient client = new HttpClient())
             {

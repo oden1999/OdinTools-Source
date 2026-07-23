@@ -113,7 +113,7 @@ namespace OdinTools.Pages
         {
             string rutaJson = System.IO.Path.GetFullPath(@"..\\..\\data-fix.json");
             string rutaJsonApp = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data-fix.json");
-            string urlJson = "https://raw.githubusercontent.com/oden1999/OdinTools/main/data-fix.json";
+            string urlJson = "https://raw.githubusercontent.com/oden1999/OdinTools-Source/main/data-fix.json";
 
             if (await EsArchivoGitHubDiferente(urlJson, rutaJson) || await EsArchivoGitHubDiferente(urlJson, rutaJsonApp))
             {

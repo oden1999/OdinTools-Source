@@ -174,7 +174,7 @@ namespace OdinTools.Pages
         {
             string rutaJson = System.IO.Path.GetFullPath(@"..\\..\\data.json");
             string rutaJsonApp = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.json");
-            string urlJson = "https://raw.githubusercontent.com/oden1999/OdinTools/main/data.json";
+            string urlJson = "https://raw.githubusercontent.com/oden1999/OdinTools-Source/main/data.json";
 
             if (await EsArchivoGitHubDiferente(urlJson, rutaJson) || await EsArchivoGitHubDiferente(urlJson, rutaJsonApp))
             {
