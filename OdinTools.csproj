@@ -168,9 +168,6 @@
     <Compile Include="Pages\panelAjustes.xaml.cs">
       <DependentUpon>panelAjustes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\panelBiblioteca.xaml.cs">
-      <DependentUpon>panelBiblioteca.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\panelBypass.xaml.cs">
       <DependentUpon>panelBypass.xaml</DependentUpon>
     </Compile>
@@ -182,9 +179,6 @@
     </Compile>
     <Compile Include="Pages\panelSteamLess.xaml.cs">
       <DependentUpon>panelSteamLess.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\panelTienda.xaml.cs">
-      <DependentUpon>panelTienda.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\ChangeLog.xaml.cs">
       <DependentUpon>ChangeLog.xaml</DependentUpon>
@@ -217,54 +211,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\panelBiblioteca.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelBypass.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelBienvenida.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelApp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelJuego.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelMenuPrincipal.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelOnlineFix.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelSteamLess.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\panelTienda.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\Cabecera.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Pages\panelBienvenida.xaml.cs">
       <DependentUpon>panelBienvenida.xaml</DependentUpon>
     </Compile>
