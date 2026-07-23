@@ -230,7 +230,7 @@ namespace OdinTools.Pages
         {
             string appId = keyValuePair.Key;
             string user = "oden1999";
-            string repo = "gamesFixes";
+            string repo = "OdinTools-GamesFixes";
             string token = TokenManager.GetGithubToken();
 
             //ESTABLEZCO EL BRANCH POR DEFECTO

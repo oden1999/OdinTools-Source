@@ -507,7 +507,7 @@ namespace OdinTools.Pages
         {
             string appId = keyValuePair.Key;
             string user = "oden1999";
-            string repo = "onlineFixes";
+            string repo = "OdinTools-GamesFixes";
             string token = TokenManager.GetGithubFixToken();
 
             string apiUrl = $"https://api.github.com/repos/{user}/{repo}/contents/{appId}";
