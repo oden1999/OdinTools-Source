@@ -229,63 +229,73 @@ namespace OdinTools.Pages
         private async void descargarJuego(KeyValuePair<string, Juego> keyValuePair)
         {
             string appId = keyValuePair.Key;
-            string user = "oden1999";
-            string repo = "OdinTools-GamesFixes";
-            string token = TokenManager.GetGithubToken();
-
-            //ESTABLEZCO EL BRANCH POR DEFECTO
-            string branchToUse = "main";
-            //VARIABLE PARA ALMACENAR LA RUTA DENTRO DEL REPOSITORIO (por defecto: raíz)
-            string contentPath = string.Empty;
-
-            //DEFININO LA URL BASE DEL REPOSITORIO
-            string repoBaseUrl = $"https://api.github.com/repos/{user}/{repo}";
+            string directDownloadUrl = keyValuePair.Value.download_url;
+            List<ArchivoGitHub> archivos;
 
 
             try
             {
-                HttpClient client = new HttpClient();
-                client.Timeout = TimeSpan.FromHours(4);
-                client.DefaultRequestHeaders.UserAgent.ParseAdd("request");
-                client.DefaultRequestHeaders.Authorization =
-                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-
-                //URL para consultar la información del branch específico
-                string branchCheckUrl = $"{repoBaseUrl}/branches/{appId}";
-
-                //Intento obtener la respuesta HTTP completa para evitar excepción si el branch no existe (404)
-                HttpResponseMessage response = await client.GetAsync(branchCheckUrl);
-
-                if (response.IsSuccessStatusCode)
+                using (HttpClient client = new HttpClient())
                 {
-                    //SI EL BRANCH EXISTE (código 200), USO EL APPID como branch, y la ruta de contenido es la raíz
-                    branchToUse = appId;
-                    contentPath = string.Empty; //Contenido está en la raíz del branch
-                }
-                else
-                {
-                    //SI EL BRANCH NO EXISTE (código 404), USAMOS EL BRANCH 'main'
-                    branchToUse = "main";
-                    //CAMBIO CLAVE: El contenido debe estar en una carpeta con el nombre del appId dentro de 'main'
-                    contentPath = appId;
-                }
+                    client.Timeout = TimeSpan.FromHours(4);
+                    client.DefaultRequestHeaders.UserAgent.ParseAdd("request");
 
-                //CONSTRUYO LA URL DE CONTENIDO, ESPECIFICANDO EL 'ref' (branch) Y LA RUTA DE CONTENIDO A USAR
-                //Si contentPath es vacío, la URL será .../contents?ref=... (raíz)
-                // i contentPath es "appid", la URL será .../contents/appid?ref=... (subcarpeta)
-                string apiUrl = $"{repoBaseUrl}/contents/{contentPath}?ref={branchToUse}";
+                    if (IsValidDownloadUrl(directDownloadUrl))
+                    {
+                        // نستخدم الرابط المنشور في data.json مباشرةً، مع اسم آمن مستخرج من الرابط.
+                        archivos = new List<ArchivoGitHub>
+                        {
+                            new ArchivoGitHub
+                            {
+                                name = GetDownloadFileName(directDownloadUrl),
+                                path = directDownloadUrl,
+                                type = "file",
+                                size = 0,
+                                download_url = directDownloadUrl
+                            }
+                        };
+                    }
+                    else
+                    {
+                        // fallback للتوافق مع البنية القديمة في OdinTools-GamesFixes.
+                        string user = "oden1999";
+                        string repo = "OdinTools-GamesFixes";
+                        string token = TokenManager.GetGithubToken();
+                        string branchToUse = "main";
+                        string contentPath = string.Empty;
+                        string repoBaseUrl = $"https://api.github.com/repos/{user}/{repo}";
 
-                string json = await client.GetStringAsync(apiUrl);
+                        client.DefaultRequestHeaders.Authorization =
+                            new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
-                if (string.IsNullOrEmpty(json))
-                {
-                    var ventanaError = new Windows.ErrorDialog("Failed to authenticate with GitHub. Please check your token.", Brushes.Red);
-                    ventanaError.ShowDialog();
-                    fixButton.IsEnabled = true;
-                    return;
-                }
+                        string branchCheckUrl = $"{repoBaseUrl}/branches/{appId}";
+                        HttpResponseMessage response = await client.GetAsync(branchCheckUrl);
 
-                var archivos = JsonConvert.DeserializeObject<List<ArchivoGitHub>>(json);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            branchToUse = appId;
+                        }
+                        else
+                        {
+                            contentPath = appId;
+                        }
+
+                        string apiUrl = $"{repoBaseUrl}/contents/{contentPath}?ref={branchToUse}";
+                        string json = await client.GetStringAsync(apiUrl);
+
+                        if (string.IsNullOrEmpty(json))
+                        {
+                            throw new InvalidDataException("The repair source returned an empty response.");
+                        }
+
+                        archivos = JsonConvert.DeserializeObject<List<ArchivoGitHub>>(json)
+                                   ?? new List<ArchivoGitHub>();
+                    }
+
+                    if (archivos.Count == 0)
+                    {
+                        throw new InvalidDataException("No repair files were found for this game.");
+                    }
 
                 //CommonOpenFileDialog PARA SELECCIONAR EL SELECTOR DE FICHEROS DE WINDOWS
                 var folderDialog = new CommonOpenFileDialog();
@@ -372,7 +382,9 @@ namespace OdinTools.Pages
                         {
                             // Progreso total = (Bytes_YA_Descargados + Bytes_Leídos_AHORA) / Total_Absoluto
                             long totalActual = totalBytesDescargadosHastaAhora + bytesLeidosDelArchivo;
-                            double porcentaje = (double)totalActual / totalBytesADescargar * 100;
+                            double porcentaje = totalBytesADescargar > 0
+                                ? Math.Min(100, (double)totalActual / totalBytesADescargar * 100)
+                                : 0;
 
                             // CÁLCULO DE VELOCIDAD
                             DateTime currentTime = DateTime.Now;
@@ -504,6 +516,7 @@ namespace OdinTools.Pages
                     ventanaError.ShowDialog();
                     fixButton.IsEnabled = true;
                 }
+                }
             }
             catch (Exception ex)
             {
@@ -517,6 +530,26 @@ namespace OdinTools.Pages
         // Variables para el cálculo de velocidad
         private long lastBytesRead = 0;
         private DateTime lastUpdateTime = DateTime.Now;
+
+        private static bool IsValidDownloadUrl(string url)
+        {
+            if (!Uri.TryCreate(url, UriKind.Absolute, out Uri parsed))
+                return false;
+
+            return parsed.Scheme == Uri.UriSchemeHttp || parsed.Scheme == Uri.UriSchemeHttps;
+        }
+
+        private static string GetDownloadFileName(string url)
+        {
+            if (Uri.TryCreate(url, UriKind.Absolute, out Uri parsed))
+            {
+                string fileName = System.IO.Path.GetFileName(parsed.AbsolutePath);
+                if (!string.IsNullOrWhiteSpace(fileName))
+                    return fileName;
+            }
+
+            return "repair_download.zip";
+        }
 
         //METODO AUXILIAR PARA QUE LA DESCARGA DE JUEGOS Y VER SUS BYTES
         private async Task DownloadFileWithProgress(HttpClient client, string url, string destinationPath, IProgress<long> progress)
