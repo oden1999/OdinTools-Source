@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using OdinTools.Windows;
 using System;
 using System.Collections.Generic;
@@ -73,6 +73,7 @@ namespace OdinTools.Pages
             public List<string> errores { get; set; }
             public string nombre_fix { get; set; }
             public Dictionary<string, string> custom_images { get; set; }
+            public string download_url { get; set; }
         }
 
 
@@ -172,7 +173,7 @@ namespace OdinTools.Pages
         //ESTE METODO BUSCA SACAR TODOS LOS JUEGOS DE UNA SOLA COMPAÑIA DADA POR EL nomApp
         private async Task<Dictionary<string, Juego>> sacarJuegosDeApp(string nomApp)
         {
-            string rutaJson = System.IO.Path.GetFullPath(@"..\\..\\data.json");
+            string rutaJson = System.IO.Path.GetFullPath(@"..\..\data.json");
             string rutaJsonApp = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.json");
             string urlJson = "https://raw.githubusercontent.com/oden1999/OdinTools-Source/main/data.json";
 
@@ -237,7 +238,7 @@ namespace OdinTools.Pages
 
 
         //ESTE METODO BUSCA CREAR TODOS LOS BOTONES, COLCOAR SU IMAGEN Y SU RESPECTIVO METODO DE CLICK
-        private async Task colocarBotones(Dictionary<string, Juego> juegosApp)
+
         {
             panelJuegos.Children.Clear();
 
@@ -357,7 +358,6 @@ namespace OdinTools.Pages
             if (element == null) return Task.CompletedTask;
 
             element.Visibility = Visibility.Visible; // Aseguramos que se vea
-            element.Opacity = 0; // Empezamos desde 0
 
             var tcs = new TaskCompletionSource<bool>();
 
