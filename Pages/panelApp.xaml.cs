@@ -73,6 +73,7 @@ namespace OdinTools.Pages
             public List<string> errores { get; set; }
             public string nombre_fix { get; set; }
             public Dictionary<string, string> custom_images { get; set; }
+            public string download_url { get; set; }
         }
 
 
