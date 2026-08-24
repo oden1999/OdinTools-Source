@@ -1670,6 +1670,22 @@
         "DirectX 9",
         "VC Redist"
       ]
+    },
+    "939850": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX and VC Redist.",
+        "Open the game with ManOfMedan.exe"
+      ],
+      "launch_exe": true,
+      "launch_steam": false,
+      "name": "The Dark Pictures Anthology: Man of Medan™",
+      "nombre_fix": "The Dark Pictures Anthology: Man of Medan - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        "VC Redist"
+      ]
     }
   },
   "PlayStation": {
