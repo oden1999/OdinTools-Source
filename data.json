@@ -1333,6 +1333,7 @@
     "2000950": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
+      "disponible": false,
       "errores": [
         "If the game shows errors when opening, you need to install DirectX 12 and VC Redist",
         "For open the game, use the bat called !start_cod.bat",
@@ -1577,6 +1578,7 @@
       "custom_images": {
         "hero_image": "https://cdn2.steamgriddb.com/grid/37e4af3db354d3552585983bc5a823f8.png"
       },
+      "disponible": false,
       "errores": [
         "If the game shows errors when opening, you need to install DirectX 12 and VC Redist",
         "Open the game with _MWIII Lightning Launcher_.exe",
