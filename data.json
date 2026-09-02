@@ -1382,6 +1382,23 @@
         "VC Redist"
       ]
     },
+    "2054970": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX and VC Redist.",
+        "VERY IMPORTANT: STEAM MUST BE CLOSED before launching the game, or you will get an error.",
+        "Open the game with DD2.exe"
+      ],
+      "launch_exe": true,
+      "launch_steam": false,
+      "name": "Dragon's Dogma 2™",
+      "nombre_fix": "Dragon's Dogma 2 - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        "VC Redist"
+      ]
+    },
     "209160": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
