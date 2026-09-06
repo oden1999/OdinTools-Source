@@ -142,6 +142,22 @@
         "DirectX"
       ]
     },
+    "1971870": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET 4.6.2, Microsoft VC redistributable 2022 and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Mortal Kombat 1",
+      "nombre_fix": "Mortal Kombat 1 - bypass",
+      "programas_necesarios": [
+        ".NET 4.6.2",
+        "Microsoft VC redistributable 2022",
+        "DirectX"
+      ]
+    },
     "2050650": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
@@ -2158,6 +2174,22 @@
       "launch_steam": true,
       "name": "Avatar: Frontiers of Pandora",
       "nombre_fix": "Avatar: Frontiers of Pandora - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        ".NET",
+        "Ubisoft Connect"
+      ]
+    },
+    "2842040": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, .NET, and Ubisoft Connect."
+      ],
+      "launch_exe": false,
+      "launch_steam": true,
+      "name": "Star Wars Outlaws",
+      "nombre_fix": "Star Wars Outlaws - bypass",
       "programas_necesarios": [
         "DirectX",
         ".NET",
