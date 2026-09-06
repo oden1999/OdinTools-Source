@@ -174,6 +174,23 @@
         "DirectX"
       ]
     },
+    "2161700": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET 4.6.2, Microsoft VC redistributable 2022 and DirectX."
+      ],
+      "exclusion": true,
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Persona 3 Reload",
+      "nombre_fix": "Persona 3 Reload - bypass",
+      "programas_necesarios": [
+        ".NET 4.6.2",
+        "Microsoft VC redistributable 2022",
+        "DirectX"
+      ]
+    },
     "2215200": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {
@@ -2162,6 +2179,23 @@
         "DirectX",
         "Ubisoft Play",
         ".NET 4.0"
+      ]
+    },
+    "2751000": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, .NET, and Ubisoft Connect."
+      ],
+      "exclusion": true,
+      "launch_exe": false,
+      "launch_steam": true,
+      "name": "Prince of Persia The Lost Crown",
+      "nombre_fix": "Prince of Persia The Lost Crown - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        ".NET",
+        "Ubisoft Connect"
       ]
     },
     "2840770": {
