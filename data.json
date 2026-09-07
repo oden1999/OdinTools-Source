@@ -1101,9 +1101,11 @@
     "3059520": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {
-        "hero_image": "https://cdn2.steamgriddb.com/grid/0cee0119ca5c721f1d76d6a425516299.png"
+        "cover_image": "https://cdn2.steamgriddb.com/grid/da8f17df33b392e61af87eedc7a02773.png",
+        "hero_image_x2": "https://cdn2.steamgriddb.com/hero/7a42294ed0341f5e2dc1c218cbb711ab.png",
+        "logo_img": "https://cdn2.steamgriddb.com/logo/59ccc377d175af5b04d0c03dea8a1b9c.png"
       },
-      "disponible": false,
+      "disponible": true,
       "errores": [
         "If the game shows errors when opening, you need to install DirectX, EA App and VC Redist",
         "1. Install the game using files from 'F1 25 - GET HERE'. If already installed, update via SteamTools.",
@@ -1119,7 +1121,7 @@
       ],
       "launch_exe": true,
       "launch_steam": false,
-      "name": "F1® 25",
+      "name": "F1® 25 + F1® 26 Season Pack",
       "nombre_fix": "F1 25 - bypass",
       "programas_necesarios": [
         "DirectX",
