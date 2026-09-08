@@ -2063,6 +2063,24 @@
         ".NET 4.0"
       ]
     },
+    "2290180": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, .NET, and Ubisoft Connect.",
+        "To launch the game, you need to use the Start.exe executable included in the game's root folder.",
+        "Only ZEN Mode is available. It is the only offline mode the game has, so please don't ask about the normal mode."
+      ],
+      "launch_exe": true,
+      "launch_steam": false,
+      "name": "Riders Republic - ZEN MODE",
+      "nombre_fix": "Riders Republic - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        ".NET",
+        "Ubisoft Connect"
+      ]
+    },
     "233270": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {
@@ -2190,7 +2208,7 @@
         "If the game shows errors when opening, you need to install DirectX, .NET, and Ubisoft Connect."
       ],
       "exclusion": true,
-      "launch_exe": false,
+      "launch_exe": true,
       "launch_steam": true,
       "name": "Prince of Persia The Lost Crown",
       "nombre_fix": "Prince of Persia The Lost Crown - bypass",
@@ -2222,7 +2240,7 @@
       "errores": [
         "If the game shows errors when opening, you need to install DirectX, .NET, and Ubisoft Connect."
       ],
-      "launch_exe": false,
+      "launch_exe": true,
       "launch_steam": true,
       "name": "Star Wars Outlaws",
       "nombre_fix": "Star Wars Outlaws - bypass",
