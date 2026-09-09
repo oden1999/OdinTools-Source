@@ -1255,6 +1255,22 @@
         "VC Redist"
       ]
     },
+    "1114150": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX and VC Redist.",
+        "You need to launch the game using the **CarX Street.exe** executable."
+      ],
+      "launch_exe": true,
+      "launch_steam": false,
+      "name": "CarX Street™",
+      "nombre_fix": "CarX Street - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        "VC Redist"
+      ]
+    },
     "115300": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
