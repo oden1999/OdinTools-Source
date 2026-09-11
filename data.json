@@ -891,6 +891,25 @@
         "VC Redist 2019"
       ]
     },
+    "1426210": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, EA Play, VC Redist 2013 and VC Redist 2015.",
+        "There is no longer an online solution for this game, but if you want to play with a friend, you can. You just need the Parsec application; with it, your friend can play from their PC as if they were connecting a controller to your home computer.",
+        "You need to have the EA app installed, or the game won't launch."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "It Takes Two",
+      "nombre_fix": "It Takes Two - bypass",
+      "programas_necesarios": [
+        "EA App",
+        "DirectX",
+        "VC Redist 2013",
+        "VC Redist 2013"
+      ]
+    },
     "1506830": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
