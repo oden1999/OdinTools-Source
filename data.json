@@ -1596,6 +1596,26 @@
         "VC Redist"
       ]
     },
+    "2172910": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {
+        "cover_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172910/9a956ea9b11a0666a0ce0fb62a9659c6dc07c353/library_capsule.jpg",
+        "hero_image_x2": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172910/02b75d953fe7b167cecfbe81928d7d7ccae1619e/library_hero_2x.jpg",
+        "logo_img": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172910/047c801d81fbdc5cab41eaff0ae9590a6d6dce6a/logo.png"
+      },
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX and VC Redist.",
+        "You need to launch the game using the **CaptainTsubasa2WF-Win64-Shipping.exe** executable. inside CaptainTsubasa2WF/CaptainTsubasa2WF/Binaries/Win64 folder"
+      ],
+      "launch_exe": true,
+      "launch_steam": false,
+      "name": "CAPTAIN TSUBASA 2: WORLD FIGHTERS",
+      "nombre_fix": "CAPTAIN TSUBASA 2: WORLD FIGHTERS - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        "VC Redist"
+      ]
+    },
     "224060": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {
