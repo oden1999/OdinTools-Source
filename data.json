@@ -367,6 +367,22 @@
         "DirectX"
       ]
     },
+    "3483510": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "The Adventures of Elliot: The Millennium Tales",
+      "nombre_fix": "The Adventures of Elliot: The Millennium Tales - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
+      ]
+    },
     "3489700": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
@@ -576,6 +592,22 @@
       "programas_necesarios": [
         ".NET 4.6.2",
         "Microsoft VC redistributable 2022",
+        "DirectX"
+      ]
+    },
+    "801800": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Atomfall™",
+      "nombre_fix": "Atomfall™ - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
         "DirectX"
       ]
     },
