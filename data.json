@@ -2681,6 +2681,22 @@
         ".NET 4.0"
       ]
     },
+    "460920": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, .NET, and Ubisoft Connect."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Steep - ZEN MODE",
+      "nombre_fix": "Steep - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        ".NET",
+        "Ubisoft Connect"
+      ]
+    },
     "460930": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
