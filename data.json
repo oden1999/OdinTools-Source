@@ -515,6 +515,23 @@
         "VC Redist"
       ]
     },
+    "594570": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX.",
+        "I know the fix size it's too big, I've compressed it as much as I could."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Total War: WARHAMMER II",
+      "nombre_fix": "Total War: WARHAMMER II - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
+      ]
+    },
     "637100": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
