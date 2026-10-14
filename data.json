@@ -1,5 +1,20 @@
 {
   "DENUVO": {
+    "1100600": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX 12 and VC Redist 2020."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Football Manager 2020",
+      "nombre_fix": "Football Manager 2020 - bypass",
+      "programas_necesarios": [
+        "DirectX 12",
+        "VC Redist 2020"
+      ]
+    },
     "1113000": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
@@ -1409,6 +1424,7 @@
         "If the game shows errors when opening, you need to install DirectX and VC Redist.",
         "You need to launch the game using the **CarX Street.exe** executable."
       ],
+      "exclusion": true,
       "launch_exe": true,
       "launch_steam": false,
       "name": "CarX Street™",
