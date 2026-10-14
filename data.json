@@ -2706,7 +2706,7 @@
       ],
       "launch_exe": true,
       "launch_steam": true,
-      "name": "Steep - ZEN MODE",
+      "name": "Steep",
       "nombre_fix": "Steep - bypass",
       "programas_necesarios": [
         "DirectX",
