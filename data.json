@@ -1919,6 +1919,28 @@
         "VC Redist"
       ]
     },
+    "4435490": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {
+        "cover_image": "https://cdn2.steamgriddb.com/grid/ba916dda088a492c5557e89d1d321ba6.png",
+        "hero_image_x2": "https://cdn2.steamgriddb.com/hero/c1943baba556c568bfa3f61ad5b6c0e3.png",
+        "logo_img": "https://cdn2.steamgriddb.com/logo/729a2085aa4fa7ac73a1781d25fcbab9.png"
+      },
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX 12 and VC Redist",
+        "Open the game with !start_sp26",
+        "Possibly the antivirus deletes files, if that happens, mark the game folder as an exception and apply the fix again"
+      ],
+      "exclusion": true,
+      "launch_exe": true,
+      "launch_steam": false,
+      "name": "Call of Duty®: Modern Warfare® 4",
+      "nombre_fix": "Call of Duty®: Modern Warfare® 4 - bypass",
+      "programas_necesarios": [
+        "DirectX 12",
+        "VC Redist"
+      ]
+    },
     "50130": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
@@ -2432,6 +2454,23 @@
         "DirectX",
         "Ubisoft Play",
         ".NET 4.0"
+      ]
+    },
+    "2698940": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX, .NET, and Ubisoft Play.",
+        "If you cant open the game with steam, try to open it with the exe in the folder called TheCrewMotorfest_BE.exe"
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "The Crew Motorfest",
+      "nombre_fix": "The Crew Motorfest - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        ".NET",
+        "Ubisoft Play"
       ]
     },
     "2751000": {
