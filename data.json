@@ -95,6 +95,22 @@
         "DirectX"
       ]
     },
+    "1490890": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles",
+      "nombre_fix": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
+      ]
+    },
     "1687950": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
@@ -315,6 +331,22 @@
       "programas_necesarios": [
         "DirectX",
         "VC Redist"
+      ]
+    },
+    "2928600": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
+      "nombre_fix": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
       ]
     },
     "3017860": {
