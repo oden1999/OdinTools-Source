@@ -2007,6 +2007,21 @@
         "VC Redist"
       ]
     },
+    "620": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX and VC Redist."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Portal 2",
+      "nombre_fix": "Portal 2 - bypass",
+      "programas_necesarios": [
+        "DirectX",
+        "VC Redist"
+      ]
+    },
     "752590": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
