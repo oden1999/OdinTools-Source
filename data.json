@@ -79,6 +79,22 @@
         "VC Redist 2022"
       ]
     },
+    "1285190": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Borderlands® 4",
+      "nombre_fix": "Borderlands® 4 - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
+      ]
+    },
     "1382330": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
