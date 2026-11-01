@@ -318,6 +318,22 @@
         "DirectX"
       ]
     },
+    "2638890": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Onimusha: Way of the Sword",
+      "nombre_fix": "Onimusha: Way of the Sword - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
+      ]
+    },
     "2680010": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
