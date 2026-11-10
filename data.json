@@ -546,6 +546,21 @@
         "VC Redist"
       ]
     },
+    "456610": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {},
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX 11 and VC Redist 2017."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Pro Evolution Soccer 2017",
+      "nombre_fix": "Pro Evolution Soccer 2017 - bypass",
+      "programas_necesarios": [
+        "DirectX 11",
+        "VC Redist 2017"
+      ]
+    },
     "493340": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
