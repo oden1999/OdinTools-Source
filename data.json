@@ -546,6 +546,24 @@
         "VC Redist"
       ]
     },
+    "4078430": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {
+        "cover_image": "https://cdn2.steamgriddb.com/grid/a592d9fe5ade10553913fb1b94f1175c.png"
+      },
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "STAR WARS: Galactic Racer™",
+      "nombre_fix": "STAR WARS: Galactic Racer™ - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
+      ]
+    },
     "456610": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
