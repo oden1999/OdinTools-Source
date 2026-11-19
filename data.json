@@ -79,6 +79,23 @@
         "VC Redist 2022"
       ]
     },
+    "1259970": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {
+        "cover_image": "https://cdn2.steamgriddb.com/grid/16f25b46149ce0369f6b9d856d0abe25.jpg"
+      },
+      "errores": [
+        "If the game shows errors when opening, you need to install DirectX 11 and VC Redist 2020."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "eFootball PES 2021 SEASON UPDATE",
+      "nombre_fix": "PeFootball PES 2021 SEASON UPDATE - bypass",
+      "programas_necesarios": [
+        "DirectX 11",
+        "VC Redist 2020"
+      ]
+    },
     "1285190": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
