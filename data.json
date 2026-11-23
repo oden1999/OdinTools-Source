@@ -587,10 +587,11 @@
         "cover_image": "https://cdn2.steamgriddb.com/grid/2470e3a630ce607b21eee976602842dc.png"
       },
       "errores": [
-        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX.",
+        "You need to launch the game with the exe called PBZ.exe inside the folder platform/steam, not with steam"
       ],
       "launch_exe": true,
-      "launch_steam": true,
+      "launch_steam": false,
       "name": "Phantom Blade Zero",
       "nombre_fix": "Phantom Blade Zero - bypass",
       "programas_necesarios": [
