@@ -581,6 +581,24 @@
         "DirectX"
       ]
     },
+    "4115450": {
+      "comentarios": "Enjoy the game ♥",
+      "custom_images": {
+        "cover_image": "https://cdn2.steamgriddb.com/grid/2470e3a630ce607b21eee976602842dc.png"
+      },
+      "errores": [
+        "If the game shows errors when opening, you need to install .NET, Microsoft VC redistributable and DirectX."
+      ],
+      "launch_exe": true,
+      "launch_steam": true,
+      "name": "Phantom Blade Zero",
+      "nombre_fix": "Phantom Blade Zero - bypass",
+      "programas_necesarios": [
+        ".NET",
+        "Microsoft VC redistributable",
+        "DirectX"
+      ]
+    },
     "456610": {
       "comentarios": "Enjoy the game ♥",
       "custom_images": {},
